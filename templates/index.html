@@ -1,0 +1,9 @@
+
+  {% for item in items %}
+     {% if item[1] == 'True' %}
+         <rect x="{{ item[2] }}" y="0" width="1" height="50" fill="green"><title>{{item[0]}}</title></rect> 
+     {% else %}
+         <rect x="{{ item[2] }}" y="0" width="1" height="50" fill="red"><title>{{item[0]}}</title></rect>
+     {% endif %}
+  {% endfor %}
+ 
